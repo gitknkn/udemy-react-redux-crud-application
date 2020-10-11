@@ -5,16 +5,16 @@ import { Provider } from 'react-redux';
 import './index.css';
 import reducer from './reducers'
 
-import App from './App';
+// import App from './App';
 import * as serviceWorker from './serviceWorker';
 import App from './components/App';
 
 const store = createStore(reducer);
 
 ReactDOM.render(
-  <provider store={store}>
+  <Provider store={store}>
     <App />
-  </provider>,
+  </Provider>,
   document.getElementById('root')
 );
 
